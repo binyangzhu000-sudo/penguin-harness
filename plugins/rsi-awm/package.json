@@ -1,0 +1,20 @@
+{
+  "name": "@penguinharness/rsi-awm",
+  "version": "0.2.13",
+  "description": "Agent Workflow Memory that turns self-judged successful public traces into parameterized skills and verifies their reuse.",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prism-Shadow/penguin-harness.git",
+    "directory": "plugins/rsi-awm"
+  },
+  "files": [
+    "plugin.json",
+    "icon.svg",
+    "skills",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

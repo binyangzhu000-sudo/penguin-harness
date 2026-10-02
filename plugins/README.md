@@ -10,7 +10,7 @@ Included plugins, by category (`PLUGIN_CATEGORIES` in `packages/core/src/plugins
 | --- | --- |
 | Office Productivity | `data-analysis`, `use-firecrawl`, `use-bento-slides`, `humanizer`, `goal`, `continual-learning` |
 | Software Development | `software-development`, `use-claude-code` |
-| AI App Development | `agent-development`, `model-development`, `skill-porting`, `agent-tuning` |
+| AI App Development | `agent-development`, `model-development`, `skill-porting`, `agent-tuning`, `rsi-awm` |
 | Agent Company | `agent-company` |
 
 `humanizer`, `use-claude-code`, `continual-learning` and `agent-company` carry `preinstall: false`, so `default_agent` does not get them at initialization — they are installed from the library on demand (`agent-company` by the organization itself, when it creates the CEO and hires employees, or by hand onto any Agent that should be able to create one). `goal` is the stop hook behind goal mode: its `start.mjs` writes the Session's `GOAL.json` and composes round 1, its `stop.mjs` reads the Trace after every Task and injects the next round or ends the goal. `continual-learning` hands a long task's condensed excerpt to a background subagent that folds the findings into the agent's skills.

@@ -75,6 +75,9 @@ importers:
       '@penguinharness/model-development':
         specifier: workspace:*
         version: link:../../plugins/model-development
+      '@penguinharness/rsi-awm':
+        specifier: workspace:*
+        version: link:../../plugins/rsi-awm
       '@penguinharness/skill-porting':
         specifier: workspace:*
         version: link:../../plugins/skill-porting
@@ -157,6 +160,9 @@ importers:
       '@penguinharness/model-development':
         specifier: workspace:*
         version: link:../../plugins/model-development
+      '@penguinharness/rsi-awm':
+        specifier: workspace:*
+        version: link:../../plugins/rsi-awm
       '@penguinharness/skill-porting':
         specifier: workspace:*
         version: link:../../plugins/skill-porting
@@ -236,6 +242,9 @@ importers:
       '@penguinharness/model-development':
         specifier: workspace:*
         version: link:../../plugins/model-development
+      '@penguinharness/rsi-awm':
+        specifier: workspace:*
+        version: link:../../plugins/rsi-awm
       '@penguinharness/skill-porting':
         specifier: workspace:*
         version: link:../../plugins/skill-porting
@@ -579,6 +588,8 @@ importers:
   plugins/humanizer: {}
 
   plugins/model-development: {}
+
+  plugins/rsi-awm: {}
 
   plugins/sandbox-bwrap:
     devDependencies:
@@ -1514,6 +1525,9 @@ packages:
 
   '@penguinharness/model-development@file:plugins/model-development':
     resolution: {directory: plugins/model-development, type: directory}
+
+  '@penguinharness/rsi-awm@file:plugins/rsi-awm':
+    resolution: {directory: plugins/rsi-awm, type: directory}
 
   '@penguinharness/skill-porting@file:plugins/skill-porting':
     resolution: {directory: plugins/skill-porting, type: directory}
@@ -5420,6 +5434,8 @@ snapshots:
 
   '@penguinharness/model-development@file:plugins/model-development': {}
 
+  '@penguinharness/rsi-awm@file:plugins/rsi-awm': {}
+
   '@penguinharness/skill-porting@file:plugins/skill-porting': {}
 
   '@penguinharness/software-development@file:plugins/software-development': {}
@@ -5475,6 +5491,7 @@ snapshots:
       '@penguinharness/goal': file:plugins/goal
       '@penguinharness/humanizer': file:plugins/humanizer
       '@penguinharness/model-development': file:plugins/model-development
+      '@penguinharness/rsi-awm': file:plugins/rsi-awm
       '@penguinharness/skill-porting': file:plugins/skill-porting
       '@penguinharness/software-development': file:plugins/software-development
       '@penguinharness/use-bento-slides': file:plugins/use-bento-slides
@@ -5507,6 +5524,7 @@ snapshots:
       '@penguinharness/goal': file:plugins/goal
       '@penguinharness/humanizer': file:plugins/humanizer
       '@penguinharness/model-development': file:plugins/model-development
+      '@penguinharness/rsi-awm': file:plugins/rsi-awm
       '@penguinharness/skill-porting': file:plugins/skill-porting
       '@penguinharness/software-development': file:plugins/software-development
       '@penguinharness/use-bento-slides': file:plugins/use-bento-slides
@@ -5535,6 +5553,7 @@ snapshots:
       '@penguinharness/goal': file:plugins/goal
       '@penguinharness/humanizer': file:plugins/humanizer
       '@penguinharness/model-development': file:plugins/model-development
+      '@penguinharness/rsi-awm': file:plugins/rsi-awm
       '@penguinharness/skill-porting': file:plugins/skill-porting
       '@penguinharness/software-development': file:plugins/software-development
       '@penguinharness/use-bento-slides': file:plugins/use-bento-slides

@@ -1,6 +1,6 @@
 /**
  * Landing ↔ plugin-library sync: the home page's Skills section presents the built-in skills,
- * so every skill that ships in a packages/plugins plugin has to appear in both dictionaries and
+ * so every publicly listed skill has to appear in both dictionaries and
  * nothing else may (hook packages are not skills and are not listed there). Derived from the
  * library directories — the same source docs' skills-sync test reads — so shipping a skill
  * without listing it here fails instead of leaving the section quietly short.
@@ -17,6 +17,9 @@ import type { Strings } from "../src/lib/strings";
 import { en } from "../src/lib/strings-en";
 
 const pluginsRoot = join(__dirname, "..", "..", "..", "plugins");
+
+// AWM is an optional experimental plugin; its public landing-page listing is deferred.
+const deferredSkills = new Set(["rsi-awm"]);
 
 /** Every skill directory under every plugin's skills/ (a plugin may ship none). */
 const librarySkills = readdirSync(pluginsRoot, { withFileTypes: true })
@@ -50,7 +53,7 @@ describe("landing ↔ skill library sync", () => {
     it(`${file}'s Skills section lists exactly the library`, () => {
       const listed = listedSkills(dict);
       expect(
-        librarySkills.filter((name) => !listed.includes(name)),
+        librarySkills.filter((name) => !deferredSkills.has(name) && !listed.includes(name)),
         `Skills that ship but are missing from ${file}`,
       ).toEqual([]);
       expect(

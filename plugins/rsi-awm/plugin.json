@@ -1,0 +1,9 @@
+{
+  "description": "Agent Workflow Memory that turns self-judged successful public traces into parameterized skills and verifies their reuse.",
+  "description_zh": "从自行判断成功的公开执行记录中提取参数化工作流技能，并检查后续任务是否读取和使用。",
+  "short_description": "Learn reusable workflows from successful traces.",
+  "short_description_zh": "从成功执行记录中学习可复用工作流。",
+  "version": "2026.10.02.3",
+  "category": "ai-app-development",
+  "preinstall": false
+}
